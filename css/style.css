@@ -11,10 +11,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Header */
+
 .showcase {
-  height: 100vh;
   color: #fff;
   background: url('/img/background.jpg') no-repeat center center/cover;
+  border-bottom: 8px solid #222;
+  border-bottom-width: 8px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(34, 34, 34);
 }
 
 .top {
@@ -22,8 +27,8 @@ body {
 }
 
 .top img {
-  width: 134px;
-  height: 36px;
+  width: 167px;
+  height: 45px;
   top: 1.75rem;
   left: 3.5em;
   position: relative;
@@ -36,7 +41,7 @@ body {
   float: right;
   top: 1.5rem;
   right: 3.5rem;
-  font-size: 16px;
+  font-size: 1.25rem;
   font-weight: 400;
   padding: 5px 20px;
   text-align: center;
@@ -47,8 +52,9 @@ body {
 }
 
 .showcase .title {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   text-align: center;
+  line-height: 4rem;
 }
 
 .greenbar {
@@ -71,7 +77,7 @@ body {
   font-weight: 600;
   text-align: left;
   color: #00d65f;
-  left: -13%;
+  left: 10%;
   bottom: 0;
 }
 
@@ -88,7 +94,7 @@ body {
 .timeline-label .second-bill-date {
   position: absolute;
   white-space: nowrap;
-  left: 85%;
+  left: 75%;
   bottom: 0;
 }
 
@@ -101,7 +107,7 @@ body {
     #3f3f3f 85%,
     rgba(63, 63, 63, 0) 100%
   );
-  width: 85%;
+  width: 55%;
   height: 2.5rem;
   margin: auto;
   border-radius: 2rem;
@@ -121,13 +127,13 @@ body {
 }
 
 .timeline-bar:after {
-  left: 85%;
+  left: 87.5%;
   content: '';
   width: 2.5rem;
   height: 100%;
   position: absolute;
   top: 0;
-  transform: translateX(-85%);
+  transform: translateX(-80%);
   background: white;
   border-radius: 1.5em;
 }
@@ -138,33 +144,128 @@ body {
 
 .reminder-label {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   font-size: 1.75rem;
 }
 
 .end-message {
-  font-size: 26px;
+  max-width: 750px;
+  margin: 3rem auto;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
   text-align: center;
-  margin: 2rem 12rem;
+  line-height: 2rem;
+}
+
+.email-wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+  display: inline;
+}
+
+.email-form {
+  text-align: center;
+  display: flex;
 }
 
 .email-form input {
   border: solid 1px #8c8c8c;
-  display: block;
-  width: 65%;
-  height: 4rem;
+  width: 438px;
+  height: 71px;
+  box-shadow: none;
   font-size: 1rem;
   margin: auto;
   padding: 10px 10px 0;
+  -webkit-appearance: none;
+  position: relative;
+  left: 15%;
 }
 
-.email-form .input-apply {
-  text-align: center;
+.email-btn {
   background-color: #e50914;
-  padding: 5.6px 52px 5.6px 25.8px;
+  border: 1px solid #e50914;
   text-decoration: none;
+  outline: none;
+  font-size: 30px;
   color: #fff;
-  font-size: 1.625rem;
-  border-radius: 2px;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 1px 0px 0px;
-  letter-spacing: 0.1px;
+  padding: 12px 40px;
+  margin: auto;
+  position: relative;
+  right: 16%;
 }
+
+.email-p {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* Contents */
+
+.content {
+  color: #fff;
+  background-color: black;
+  border-bottom: 8px solid #222;
+  border-bottom-width: 8px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(34, 34, 34);
+}
+
+.content img {
+  max-width: 530px;
+  max-height: 397px;
+  width: auto;
+  height: auto;
+  border: 0;
+  padding: 0 2rem;
+}
+
+.content h1 {
+  font-size: 50px;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  margin-right: 5rem;
+  font-size: 26px;
+}
+
+.content-tv {
+  border-bottom: 8px solid #222;
+  border-bottom-width: 8px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(34, 34, 34);
+}
+
+.content-tv-card,
+.content-pc-card {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  text-align: left;
+  align-items: center;
+}
+
+.content-phone {
+  border-bottom: 8px solid #222;
+  border-bottom-width: 8px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(34, 34, 34);
+}
+
+.content-phone-card {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  text-align: left;
+  align-items: center;
+}
+
+/* QnA */
+
